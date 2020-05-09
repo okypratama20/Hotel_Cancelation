@@ -15,7 +15,7 @@ data_Na <- drop_na(hotel_bookings)
 
 library(ggplot2) #using ggplot
 
-#creating canceled pattern base on Deposite Type
+#creating canceled pattern base on Deposite Type.
 
 ggplot(data_Na,aes(x=data_Na$V33,fill=data_Na$deposit_type))+       #V33 is the new factor variabel
   geom_bar(position = "dodge")+
